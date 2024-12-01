@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Content */}
       <div className='absolute h-full flex flex-col justify-end items-center px-6 text-center w-screen bottom-28'>
         {/* Tagline */}
-        <ul className='font-koulen text-4xl uppercase tracking-wide space-x-4 flex flex-col justify-center text-white/80'>
+        <ul className='font-koulen text-5xl uppercase tracking-wide space-x-4 flex flex-col justify-center text-white/80'>
           <li>Breathtaking Beards</li>
           <li>Flawless Fades</li>
           <li>Conscious Conversation</li>
@@ -27,6 +27,8 @@ const Hero = () => {
           <a
             href='https://maps.app.goo.gl/iBSA1wgosbMoqo9p6'
             className='no-underline text-blue-300 hover:text-white'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             314 Montague Rd, West End, QLD
           </a>
