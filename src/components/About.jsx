@@ -1,10 +1,10 @@
 const AboutBooking = () => {
   return (
-    <section className='bg-zinc-950  text-zinc-400 pt-32 pb-8 px-16'>
+    <section className='bg-zinc-950  text-zinc-400 pt-32 pb-8 px-4'>
       <div className='max-w-6xl mx-auto text-xl grid grid-cols-1 md:grid-cols-2 gap-12 items-start'>
         {/* Left Column */}
         <div className='py-6'>
-          <h2 className='font-medium uppercase font-semibold text-zinc-500 mb-4'>
+          <h2 className='font-medium uppercase text-zinc-500 mb-4'>
             Men&#39;s haircuts, precision fades, and beard trims, located in
             West End, Brisbane.
           </h2>
