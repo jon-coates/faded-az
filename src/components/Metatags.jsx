@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import ogimg from "../assets/og-image.png";
 
 const MetaTags = () => {
   return (
@@ -26,7 +27,7 @@ const MetaTags = () => {
       />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://fadedaz.com.au' />
-      {/* <meta property="og:image" content="https://fadedaz.com.au/og-image.jpg" /> */}
+      <meta property='og:image' content={ogimg} />
       <meta property='og:site_name' content='Faded Az' />
 
       {/* Twitter Card Tags */}
@@ -39,7 +40,7 @@ const MetaTags = () => {
         name='twitter:description'
         content='Breathtaking beards, flawless fades, and conscious conversation. Visit us in Brisbane.'
       />
-      {/* <meta name="twitter:image" content="https://fadedaz.com.au/og-image.jpg" /> */}
+      <meta name='twitter:image' content={ogimg} />
       <meta name='twitter:site' content='@FadedAz' />
 
       {/* Favicons */}
