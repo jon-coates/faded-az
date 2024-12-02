@@ -1,8 +1,6 @@
 import herobg from "../assets/herobg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const Hero = () => {
   return (

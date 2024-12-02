@@ -36,15 +36,29 @@ const AboutBooking = () => {
           <h3 className='mb-4 font-koulen text-3xl tracking-wider'>
             Book Appointment
           </h3>
-          <div id='booking' className='bg-white shadow-md p-4 rounded-md'>
+
+          {/* <div id='booking' className='bg-white shadow-md p-4 rounded-md'>
             <iframe
               src='https://bookings.gettimely.com/fadedaz/book?uri=https://book.gettimely.com/Booking/Location/258036?mobile%3DTrue%26params%3D%25253fclient-login%25253dtrue'
               title='Booking Widget'
               className='w-full h-screen rounded-md border'
             ></iframe>
+          </div> */}
+
+          <div>
+            <div id='booking' className='bg-white shadow-md p-4 rounded-md'>
+              <iframe
+                src='https://bookings.gettimely.com/fadedaz/bb/book'
+                scrolling='no'
+                id='timelyWidget'
+                className='w-full h-screen rounded-md border'
+                //   style='width:480px;height:600px;border:none'
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
+
       <div className='mt-24'>
         <iframe
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.6148711712985!2d153.00006848710146!3d-27.481246915237495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915114de5cc48b%3A0x269aca5f2991c41d!2sFaded%20AZ!5e0!3m2!1sen!2sau!4v1733046955553!5m2!1sen!2sau'
@@ -56,6 +70,7 @@ const AboutBooking = () => {
           //   referrerpolicy='no-referrer-when-downgrade'
         ></iframe>
       </div>
+
       <div className='flex items-center justify-center mt-12'>
         <p>© Faded Az 2024</p>
       </div>
