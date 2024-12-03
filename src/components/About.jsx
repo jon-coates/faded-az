@@ -17,9 +17,9 @@ const AboutBooking = () => {
             Book in to Faded Az and leave looking like a million bucks.
           </p>
           <p className='mb-4'>
-            Find us in West End, opposite Light & Co Appartments on Montague
-            Road, delivering flawless fades and badass beard styling, guaranteed
-            to get you some action.
+            Find us in West End, Brisbane. Opposite Light & Co Apartments on
+            Montague Road, delivering flawless fades and badass beard styling
+            that will have you feeling unstoppable.
           </p>
           {/* <p className='mb-4'>
             Faded Az is more than just a barber shop—it&#39;s a place where
@@ -33,9 +33,9 @@ const AboutBooking = () => {
             experience why Storm from Faded Az is the best barber in town.
           </p> */}
           <p className='mb-4'>
-            We're appointment only and they can fill up quick, so why are you
-            still reading this? Go book your appointment now before they are all
-            gone.
+            Faded Az is appointment only and they can fill up quick, so why are
+            you still reading this? Go book your appointment now before they are
+            all gone.
           </p>
           <p className='font-bold'>Catch ya!</p>
         </div>
