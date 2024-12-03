@@ -1,9 +1,46 @@
 const AboutBooking = () => {
   return (
-    <section className='bg-zinc-950  text-zinc-400 pt-32 pb-8 px-4'>
-      <div className='max-w-6xl mx-auto text-xl grid grid-cols-1 md:grid-cols-2 gap-12 items-start'>
+    <section className='bg-zinc-900  text-zinc-300 pt-32 pb-8 px-4'>
+      <div className='max-w-6xl mx-auto text-xl grid grid-cols-1 md:grid-cols-2 gap-12 items-start leading-relaxed'>
         {/* Left Column */}
         <div className='py-6'>
+          <h1 className='font-medium uppercase text-zinc-400 mb-6 text-base'>
+            Men&#39;s haircuts • Precision Fades • Beard Trimming
+          </h1>
+          <h2 className='text-3xl md:text-5xl font-bold text-white mb-4 font-koulen'>
+            Yo man, I heard you were looking like shit.
+          </h2>
+          <h3 className='mb-8 font-bold text-2xl text-white'>
+            Don&#39;t worry, I got you.
+          </h3>
+          <p className='mb-4'>
+            Book in to Faded Az and leave looking like a million bucks.
+          </p>
+          <p className='mb-4'>
+            Find us in West End, opposite Light & Co Appartments on Montague
+            Road, delivering flawless fades and badass beard styling, guaranteed
+            to get you some action.
+          </p>
+          {/* <p className='mb-4'>
+            Faded Az is more than just a barber shop—it&#39;s a place where
+            style meets craftsmanship. Whether you need a sharp fade, a beard
+            refresh, or both, Faded Az guarantees exceptional service by
+            appointment only.
+          </p> */}
+          {/* <p className='mb-4'>
+            From West End to greater Brisbane and South East Qld, Faded Az is
+            raising the bar in barbering excellence. So make an appotintment and
+            experience why Storm from Faded Az is the best barber in town.
+          </p> */}
+          <p className='mb-4'>
+            We're appointment only and they can fill up quick, so why are you
+            still reading this? Go book your appointment now before they are all
+            gone.
+          </p>
+          <p className='font-bold'>Catch ya!</p>
+        </div>
+
+        {/* <div className='py-6'>
           <h2 className='font-medium uppercase text-zinc-500 mb-4'>
             Men&#39;s haircuts, precision fades, and beard trims, located in
             West End, Brisbane.
@@ -29,7 +66,7 @@ const AboutBooking = () => {
             in Brisbane. From West End to the greater Brisbane area, we&#39;re
             raising the bar in barbering excellence.
           </p>
-        </div>
+        </div> */}
 
         {/* Right Column */}
         <div>
