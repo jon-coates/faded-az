@@ -1,5 +1,7 @@
 import BookingButton from "./Bookingbutton";
 
+
+
 const AboutBooking = () => {
   const currentYear = new Date().getFullYear();
 
@@ -17,7 +19,7 @@ const AboutBooking = () => {
         <h3>By Appointment Only. Book Now.</h3>
         <BookingButton />
         <div className='flex-col items-center mt-8 sm:mt-0'>
-          <img className="h-16" src='public/faded-az-logo-black.png' alt='Faded Az Logo'/>
+          <img className="h-16" src='/faded-az-logo-black.png' alt='Faded Az Logo'/>
           <p className="text-xs text-center">© Faded Az {currentYear}</p>
         </div>
       </div>

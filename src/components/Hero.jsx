@@ -1,6 +1,7 @@
 import herobg from "../assets/herobg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import BookingButton from "./Bookingbutton";
 
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className='py-20 flex flex-col justify-center items-center px-4 text-center w-screen'>
-        <img src="public/faded-az-logo-black.png" className="min-h-40 sm:max-h-60" alt="Faded AZ Logo" />
+        <img src="/faded-az-logo-black.png" className="min-h-40 sm:max-h-60" alt="Faded AZ Logo" />
         {/* Tagline */}
         <ul className='font-dmserif text-4xl sm:text-5xl my-4 space-x-4 flex flex-col justify-center text-slate-900'>
           <li>Flawless Fades</li>
