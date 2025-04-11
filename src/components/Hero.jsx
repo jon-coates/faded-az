@@ -23,12 +23,12 @@ const Hero = () => {
         {/* Address */}
         <p className='my-4'>
           <a
-            href='https://maps.app.goo.gl/iBSA1wgosbMoqo9p6'
-            className='no-underline text-slate-600 hover:text-slate-900 hover:underline'
+            href='https://www.google.com/maps?q=Faded+AZ,+314+Montague+Rd,+West+End,+QLD'
+            className='underline text-slate-600 hover:text-slate-900 hover:no-underline'
             target='_blank'
             rel='noopener noreferrer'
           >
-            314 Montague Rd, West End, QLD
+            Find us at: 314 Montague Rd, West End, QLD
           </a>
         </p>
         <div className="sticky top-1 mt-8">
