@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <MetaTags />
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Instagram />
       <About />

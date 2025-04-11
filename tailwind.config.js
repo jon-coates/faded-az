@@ -10,6 +10,7 @@ export default {
 extend: {
       fontFamily: {
         koulen: ['Koulen', 'sans-serif'], // Define Koulen font
+        dmserif: ['DM Serif Display', 'serif'],
       },
     },
   },

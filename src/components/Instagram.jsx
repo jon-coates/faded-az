@@ -8,11 +8,11 @@ const Instagram = () => {
           // allowtransparency='true'
           // allowfullscreen='true'
           // frameborder='0'
-          height='680'
+          // height='680'
           width='100%'
           data-instgrm-payload-id='instagram-media-payload-0'
           scrolling='no'
-          className='mb-4'
+          className='mb-4 h-[460px] sm:h-[680px]'
           // style='background-color: white; border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 326px; padding: 0px;'
         ></iframe>
       </div>
