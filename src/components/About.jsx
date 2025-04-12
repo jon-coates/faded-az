@@ -17,7 +17,7 @@ const AboutBooking = () => {
           <h2 className='text-3xl md:text-5xl font-bold text-white mb-4 font-dmserif'>
             Yo man, I heard you were looking like shit.
           </h2>
-          <p className='mb-8 font-bold text-3xl text-white font-dmserif'>
+          <p className='mb-8 font-bold text-2xl sm:text-3xl text-white font-dmserif'>
             Don&#39;t worry, I got you.
           </p>
           <p className='mb-4'>
