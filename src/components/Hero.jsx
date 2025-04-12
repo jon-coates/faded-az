@@ -15,7 +15,7 @@ const Hero = () => {
     ></div>
   
     {/* Black overlay layer */}
-    <div className="absolute inset-0 bg-black/60 z-[-1]" aria-hidden="true"></div>
+    <div className="absolute inset-0 bg-black/50 z-[-1]" aria-hidden="true"></div>
   
     {/* Content */}
     <div className='py-20 flex flex-col justify-end items-center px-4 text-center w-screen relative z-10 min-h-[90vh]'>

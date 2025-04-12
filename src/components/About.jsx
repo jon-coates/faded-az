@@ -44,7 +44,7 @@ const AboutBooking = () => {
             you still reading this? Go book your appointment now before they are
             all gone.
           </p>
-          <p className='font-bold mb-8'>Catch ya!</p>
+          <p className='font-bold mb-8 font-dmserif text-2xl'>Catch ya!</p>
           <BookingButton />
         </div>
         </div>
