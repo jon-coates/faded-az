@@ -22,21 +22,21 @@ const Hero = () => {
       {/* <img src="/faded-az-logo.png" className="min-h-40 sm:max-h-40" alt="Faded AZ Logo" /> */}
   
       {/* Tagline */}
-      <ul className='font-dmserif text-4xl sm:text-5xl my-4 space-x-4 flex flex-col justify-center text-white'>
+      <ul className='font-dmserif text-3xl sm:text-5xl my-4 space-x-4 flex flex-col justify-center gap-1 text-white'>
         <li>Flawless Fades</li>
         <li>Breathtaking Beards</li>
         <li>Conscious Conversation</li>
       </ul>
   
       {/* Address */}
-      <p className='my-4'>
+      <p className='my-4 font-serif text-lg'>
         <a
           href='https://www.google.com/maps?q=Faded+AZ,+314+Montague+Rd,+West+End,+QLD'
-          className='underline text-white/60 hover:text-white hover:no-underline'
+          className='no-underline text-white/80 hover:text-white hover:underline'
           target='_blank'
           rel='noopener noreferrer'
         >
-          Find us at: 314 Montague Rd, West End, QLD
+          314 Montague Rd, West End, QLD
         </a>
       </p>
   
