@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import BookingButton from "./Bookingbutton";
 
 const faqs = [
@@ -34,6 +35,29 @@ const faqs = [
   },
 ];
 
+const FAQSchema = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify(faqSchema)}
+      </script>
+    </Helmet>
+  );
+};
+
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -42,7 +66,8 @@ export default function FAQ() {
   };
 
   return (
-    <section className="max-w-2xl mx-auto my-16 px-4">
+    <section className="max-w-2xl mx-auto my-16 px-4" id="faq">
+      <FAQSchema />
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center font-dmserif text-black dark:text-white">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, idx) => (

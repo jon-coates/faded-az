@@ -1,12 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import herobg from "/herobg.jpg";
-
 import BookingButton from "./Bookingbutton";
 
 const Hero = () => {
   return (
-    <header className='relative  w-screen text-white flex items-center justify-center bg-cover bg-center h-auto'>
+    <header className='relative  w-screen text-white flex items-center justify-center bg-cover bg-center h-auto' role="banner">
     {/* Background image layer */}
     <div
       className="absolute inset-0 bg-cover bg-center z-[-2]"
@@ -21,12 +18,17 @@ const Hero = () => {
     <div className='py-20 flex flex-col justify-end items-center px-4 text-center w-screen relative z-10 min-h-[90vh]'>
       {/* <img src="/faded-az-logo.png" className="min-h-40 sm:max-h-40" alt="Faded AZ Logo" /> */}
   
+      {/* Main H1 Heading */}
+      <h1 className='font-dmserif text-2xl sm:text-xl md:text-2xl mb-6 text-white/60 font-medium tracking-wide'>
+        Home of Brisbane&apos;s Best Fades
+      </h1>
+
       {/* Tagline */}
-      <ul className='font-dmserif text-3xl sm:text-5xl my-4 space-x-4 flex flex-col justify-center gap-1 text-white'>
-        <li>Flawless Fades</li>
-        <li>Breathtaking Beards</li>
-        <li>Conscious Conversation</li>
-      </ul>
+      <h2 className='font-dmserif text-3xl sm:text-5xl my-4 space-x-4 flex flex-col justify-center gap-1 text-white'>
+        <span>Flawless Fades</span>
+        <span>Breathtaking Beards</span>
+        <span>Conscious Conversation</span>
+      </h2>
   
       {/* Address */}
       <p className='my-4 font-serif text-lg'>
