@@ -4,6 +4,8 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Instagram from "./components/Instagram";
 import MetaTags from "./components/Metatags";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Hero />
       <Instagram />
       <About />
+      <FAQ />
+      <Footer />
     </div>
   );
 }

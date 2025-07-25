@@ -58,11 +58,9 @@ const AboutBooking = () => {
       </div>
 
       <div className='flex flex-col gap-6 items-center justify-between bg-white text-black py-8 px-4'>
-        <h3>By Appointment Only. Book Now.</h3>
+        <h3 className="font-dmserif text-2xl">By Appointment Only. Book Now.</h3>
         <BookingButton />
         <div className='flex-col items-center mt-8 sm:mt-0'>
-          <img className="h-16" src='/faded-az-logo-black.png' alt='Faded Az Logo'/>
-          <p className="text-xs text-center">© Faded Az {currentYear}</p>
         </div>
       </div>
     </section>
