@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Where can I find you guys in West End?",
     answer:
-      "We're on Montague Road, right opposite the Light & Co Apartments. Can't miss us. West End's a sick location and we're right in the heart of it all. Easy to get to whether you're local or coming from anywhere else in Brisbane. Just remember - we're appointment only, so don't just rock up expecting a walk-in.",
+      "We're hidden away on Montague Road, right across from the Light & Co Apartments. Easy enough to get to from anywhere in Brisbane if you know where you're going. Just remember - we're appointment only, so don't just rock up expecting a walk-in.",
   },
   {
     question: "How do I book at Faded Az?",

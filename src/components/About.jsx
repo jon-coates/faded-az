@@ -3,7 +3,6 @@ import BookingButton from "./Bookingbutton";
 
 
 const AboutBooking = () => {
-  const currentYear = new Date().getFullYear();
 
   return (
     <section className='bg-black mx-auto text-lg'>
