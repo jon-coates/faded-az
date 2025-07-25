@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "What makes you different from other barbers in Brisbane?",
     answer:
-      "We actually care about how you look when you leave. No cookie-cutter cuts here - we do textured crops, modern mullets, fresh fades, and whatever suits your vibe. We've built our rep on cuts that look good and grow out well. Plus we're not gonna chat your ear off unless you want us to. Just quality work and good vibes.",
+      "We actually care about how you look when you leave. No cookie-cutter cuts here - we do textured crops, modern mullets, fresh fades, and whatever suits your style. We've built our rep on cuts that look good and grow out well. Plus you'll get some decent conversation while we're at it - makes the whole experience better. Quality cuts and good chats.",
   },
   {
     question: "Can I just walk in for a cut?",
@@ -48,7 +48,7 @@ export default function FAQ() {
         {faqs.map((faq, idx) => (
           <div key={idx} className="border border-zinc-300 dark:border-zinc-700 rounded-lg overflow-hidden bg-white/80 dark:bg-zinc-900/80 shadow">
             <button
-              className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-lg focus:outline-none focus:bg-zinc-100 dark:focus:bg-zinc-800 transition"
+              className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-lg focus:outline-none  transition"
               onClick={() => toggle(idx)}
               aria-expanded={openIndex === idx}
               aria-controls={`faq-content-${idx}`}
