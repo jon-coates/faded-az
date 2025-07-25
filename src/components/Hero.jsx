@@ -20,7 +20,7 @@ const Hero = () => {
   
       {/* Main H1 Heading */}
       <h1 className='font-dmserif text-2xl sm:text-xl md:text-2xl mb-6 text-white/60 font-medium tracking-wide'>
-        Home of Brisbane&apos;s Best Fades
+        Brisbane&apos;s Best Barber for Beards &amp; Fades
       </h1>
 
       {/* Tagline */}
