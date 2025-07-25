@@ -46,7 +46,9 @@ const AboutBooking = () => {
           <p className='font-bold font-dmserif text-2xl'>Catch ya!</p>
         </div>
         </div>
-          <BookingButton />
+          <div className="flex justify-center">
+            <BookingButton />
+          </div>
         </div>
       <div>
         <iframe
