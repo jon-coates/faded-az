@@ -8,6 +8,7 @@ import LocalBusinessSchema from "./components/LocalBusinessSchema";
 import PerformanceOptimizer from "./components/PerformanceOptimizer";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import Map from "./components/Map";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <PerformanceOptimizer />
       <Navbar />
       <Hero />
-      <Instagram />
       <About />
+      <Instagram />
+      <Map />
       <FAQ />
       <Footer />
     </div>
