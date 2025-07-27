@@ -6,6 +6,7 @@ import Instagram from "./components/Instagram";
 import MetaTags from "./components/Metatags";
 import LocalBusinessSchema from "./components/LocalBusinessSchema";
 import PerformanceOptimizer from "./components/PerformanceOptimizer";
+import TimelyScript from "./components/TimelyScript";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import Map from "./components/Map";
@@ -16,6 +17,7 @@ function App() {
       <MetaTags />
       <LocalBusinessSchema />
       <PerformanceOptimizer />
+      <TimelyScript />
       <Navbar />
       <Hero />
       <About />
