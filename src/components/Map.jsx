@@ -12,7 +12,7 @@ const Map = () => {
           loading="lazy"
           className="rounded-lg"
         ></iframe>
-        <h2 className='font-dmserif text-lg sm:text-xl my-2 space-x-4 flex flex-col justify-center gap-0.5 text-white text-center'>Faded Az Barber Shop is Located at 314 Montague Rd, West End</h2>
+        <h2 className='font-dmserif text-xl sm:text-2xl my-2 space-x-4 flex flex-col justify-center gap-0.5 text-white text-center'>Faded Az Barber Shop is Located at 314 Montague Rd, West End</h2>
       </div>
 
       <div className='flex flex-col gap-6 items-center justify-between bg-white text-black py-8 px-4'>

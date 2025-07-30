@@ -30,6 +30,10 @@ const Hero = () => {
         <span>Conscious Conversation</span>
       </h2>
   
+  
+      <div className="sticky top-1 mt-8">
+        <BookingButton />
+      </div>
       {/* Address */}
       <p className='my-4 font-serif text-lg'>
         <a
@@ -41,10 +45,6 @@ const Hero = () => {
           314 Montague Rd, West End, QLD
         </a>
       </p>
-  
-      <div className="sticky top-1 mt-8">
-        <BookingButton />
-      </div>
     </div>
   </header>
   
