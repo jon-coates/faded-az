@@ -21,8 +21,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Instagram />
       <Map />
+      <Instagram />
       <FAQ />
       <Footer />
     </div>

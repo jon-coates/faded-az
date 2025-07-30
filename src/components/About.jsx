@@ -1,7 +1,7 @@
 const AboutBooking = () => {
   return (
     <section className='bg-black mx-auto text-lg' id="about">
-      <div className="sm:py-24 px-6 py-9 max-w-xl mx-auto">
+      <div className="sm:pt-24 px-6 py-9 max-w-xl mx-auto">
           <h1 className='font-medium uppercase text-zinc-400 mb-6 text-base tracking-wider'>
             Men&#39;s haircuts • Precision Fades • Beard Trimming
           </h1>

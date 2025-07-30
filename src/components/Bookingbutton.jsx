@@ -7,7 +7,7 @@ export default function BookingButton() {
         href="http://fadedaz.gettimely.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center px-6 py-4 bg-black text-white border-white/50 border-2 uppercase font-bold rounded-lg tracking-wider shadow-md hover:bg-slate-700 hover:text-white hover:-translate-y-1 transition-all"
+        className="inline-flex items-center px-8 py-4 bg-white/90 text-black border-black/50 border-2 text-2xl font-bold font-dmserif rounded-full shadow-md hover:bg-zinc-200 hover:text-zinc-900 hover:-translate-y-1 active:bg-zinc-400 active:text-black transition-all"
       >
         Book Appointment
         <FontAwesomeIcon icon={faArrowRight} className="ml-2" />

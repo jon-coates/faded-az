@@ -1,13 +1,13 @@
 const Instagram = () => {
   return (
-    <section className='bg-zinc-100 py-12'>
-      <div className='max-w-2xl mx-auto px-4'>
+    <section className='bg-zinc-950 py-12'>
+      <div className='max-w-2xl mx-auto px-5'>
         {/* Title and Copy */}
         <div className='text-center mb-8'>
-          <h2 className='font-dmserif text-3xl md:text-4xl font-bold text-black mb-4'>
+          <h2 className='font-dmserif text-3xl md:text-4xl font-bold text-white mb-4'>
             Follow Us For Updates
           </h2>
-          <p className='text-lg text-gray-700 leading-relaxed max-w-lg mx-auto'>
+          <p className='text-lg text-zinc-400 leading-relaxed max-w-lg mx-auto'>
             Follow us on Instagram to see when appointment slots open up and get the latest on what&apos;s happening at Faded Az. From fresh cuts to behind-the-scenes moments, stay connected with Brisbane&apos;s best barber.
           </p>
           <a 

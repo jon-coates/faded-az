@@ -19,12 +19,12 @@ const Hero = () => {
       {/* <img src="/faded-az-logo.png" className="min-h-40 sm:max-h-40" alt="Faded AZ Logo" /> */}
   
       {/* Main H1 Heading */}
-      <h1 className='font-dmserif text-2xl sm:text-xl md:text-2xl mb-6 text-white/60 font-medium tracking-wide'>
+      <h1 className='font-dmserif text-lg sm:text-xl md:text-2xl text-white/60 font-medium'>
         Brisbane&apos;s Best Barber for Beards &amp; Fades
       </h1>
 
       {/* Tagline */}
-      <h2 className='font-dmserif text-3xl sm:text-5xl my-4 space-x-4 flex flex-col justify-center gap-1 text-white'>
+      <h2 className='font-dmserif text-3xl sm:text-5xl my-2 space-x-4 flex flex-col justify-center gap-0.5 text-white'>
         <span>Flawless Fades</span>
         <span>Breathtaking Beards</span>
         <span>Conscious Conversation</span>
