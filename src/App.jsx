@@ -1,6 +1,7 @@
 // import React from 'react';
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Reviews from "./components/Reviews";
 import Navbar from "./components/Navbar";
 import Instagram from "./components/Instagram";
 import MetaTags from "./components/Metatags";
@@ -21,6 +22,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Reviews />
       <Map />
       <Instagram />
       <FAQ />
