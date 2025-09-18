@@ -8,7 +8,7 @@ const Hero = () => {
     {/* Background image layer */}
     <div
       className="absolute inset-0 bg-cover bg-center z-[-2]"
-      style={{ backgroundImage: `url(https://res.cloudinary.com/dixfrcina/image/upload/v1758201585/faded-az-west-end-barber-internal-02_onkvts.jpg)` }}
+      style={{ backgroundImage: `url(https://res.cloudinary.com/dixfrcina/image/upload/w_1080/v1758201585/faded-az-west-end-barber-internal-02_onkvts.jpg)` }}
       aria-hidden="true"
     ></div>
   
@@ -20,7 +20,7 @@ const Hero = () => {
       {/* <img src="/faded-az-logo.png" className="min-h-40 sm:max-h-40" alt="Faded AZ Logo" /> */}
   
       {/* Main H1 Heading */}
-      <h1 className='font-dmserif text-lg sm:text-xl md:text-2xl text-white/60 font-medium'>
+      <h1 className='font-dmserif text-base sm:text-lg md:text-1xl text-white/60 font-medium'>
         Brisbane&apos;s Best Barber for Beards &amp; Fades
       </h1>
 
