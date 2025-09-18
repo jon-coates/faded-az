@@ -6,33 +6,29 @@ const AboutBooking = () => {
             Men&#39;s haircuts • Precision Fades • Beard Trimming
           </h1>
       <div className="flex flex-row justify-center gap-4 mb-8">
-      <img src="/favicon-32x32.png" className="w-8 h-8" alt="Faded Az Barber Shop Icon"/>
+      {/* <img src="/favicon-32x32.png" className="w-8 h-8" alt="Faded Az Barber Shop Icon"/> */}
         <div className="max-w-xl bg-gray-900 p-6 round rounded-xl shadow-lg">
           <h2 className='text-3xl md:text-5xl font-bold text-white mb-4 font-dmserif'>
-            Yo man, I heard you were looking like shit.
+            A West End Barber Shop with Style & Soul
           </h2>
-          <p className='mb-8 font-bold text-2xl sm:text-3xl text-white font-dmserif'>
+          {/* <p className='mb-8 font-bold text-2xl sm:text-3xl text-white font-dmserif'>
             Don&#39;t worry, I got you.
+          </p> */}
+          <p className='mb-4'>
+            Step into Faded Az and you&apos;ll find more than a quick cut. We take our time, focus on the details, and make sure you leave looking sharp and feeling confident.
           </p>
           <p className='mb-4'>
-            Book in to Faded Az and leave looking like a million bucks.
+            From precision fades to tailored beard trims, it&apos;s about craftsmanship, conversation, and a space where you can slow down for a moment.
           </p>
           <p className='mb-4'>
-            Find me in West End, Brisbane - opposite Light & Co Apartments on
-            Montague Road - delivering flawless fades and badass beard styling
-            that will have you feeling unstoppable.
+            Appointments are essential — book ahead and secure your spot.
           </p>
-          <p className='mb-4'>
-            Faded Az is appointment only – and they can fill up quick — so why are
-            you still reading this!? Go book your appointment now before they are
-            all gone.
-          </p>
-          <p className='font-bold font-dmserif text-2xl'>Catch ya!</p>
-        </div>
+          {/* <p className='font-bold font-dmserif text-2xl'>Catch ya!</p> */}
         </div>
           {/* <div className="flex justify-center">
             <BookingButton />
           </div> */}
+        </div>
         </div>
     </section>
   );

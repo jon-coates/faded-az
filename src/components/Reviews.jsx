@@ -119,7 +119,7 @@ const Reviews = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-dmserif font-bold text-xl md:text-5xl text-white mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-dmserif">
           What Our Clients Say
           </h2>
           <div className="flex flex-col items-center justify-center gap-2 mb-4">
@@ -148,7 +148,7 @@ const Reviews = () => {
               </div>
               
               {/* Review Text */}
-              <blockquote className="text-gray-200 mb-4 italic flex-grow">
+              <blockquote className="text-gray-200 mb-4 flex-grow">
                 &ldquo;{review.text}&rdquo;
               </blockquote>
               

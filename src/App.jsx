@@ -22,8 +22,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Reviews />
       <Map />
+      <Reviews />
       <Instagram />
       <FAQ />
       <Footer />
