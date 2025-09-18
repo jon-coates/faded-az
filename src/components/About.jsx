@@ -2,9 +2,9 @@ const AboutBooking = () => {
   return (
     <section className='bg-gray-950 mx-auto text-lg' id="about">
       <div className="sm:pt-24 px-6 py-9 max-w-xl mx-auto">
-          <h1 className='font-medium uppercase text-zinc-400 mb-6 text-base tracking-wider'>
-            Men&#39;s haircuts • Precision Fades • Beard Trimming
-          </h1>
+          <h2 className='font-medium text-zinc-400 mb-6 text-xs text-center'>
+            Men&#39;s haircuts, Precision Fades, Beard Trimming
+          </h2>
       <div className="flex flex-row justify-center gap-4 mb-8">
       {/* <img src="/favicon-32x32.png" className="w-8 h-8" alt="Faded Az Barber Shop Icon"/> */}
         <div className="max-w-xl bg-gray-900 p-6 round rounded-xl shadow-lg">
