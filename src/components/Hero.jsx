@@ -1,5 +1,6 @@
 // import herobg from "/herobg.jpg";
 import BookingButton from "./Bookingbutton";
+import { motion } from "motion/react"
 
 const Hero = () => {
   return (
@@ -25,8 +26,16 @@ const Hero = () => {
 
       {/* Tagline */}
       <h2 className='font-dmserif text-5xl sm:text-7xl tracking-tighter shadow-md my-2 space-x-4 flex flex-col justify-center gap-0.5 text-white opacity-90'>
-        <span>Flawless Fades.</span>
-        <span>Breathtaking Beards.</span>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 3 }}
+        >Flawless Fades.</motion.span>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 3, delay: 1 }}
+        >Breathtaking Beards.</motion.span>
         {/* <span>Conscious Conversation</span> */}
       </h2>
   
