@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 const LocalBusinessSchema = () => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "HairSalon",
+    "@type": "BarberShop",
     "name": "Faded Az",
     "description": "Brisbane's premier barber shop specialising in flawless fades, breathtaking beards, and conscious conversation. Located in West End, Brisbane.",
     "url": "https://fadedaz.com.au",
@@ -21,7 +21,7 @@ const LocalBusinessSchema = () => {
       "latitude": -27.481246915237495,
       "longitude": 153.00006848710146
     },
-    "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-17:00",
+    "openingHours": "Th-Fr 08:00-20:00, Sa 08:00-14:30",
     "priceRange": "$$",
     "currenciesAccepted": "AUD",
     "paymentAccepted": "Cash, Credit Card",
