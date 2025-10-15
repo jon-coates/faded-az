@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import BookingButton from "./Bookingbutton";
+import { motion } from "motion/react";
 
 const faqs = [
   {
@@ -66,34 +67,71 @@ export default function FAQ() {
   };
 
   return (
-    <section className="max-w-2xl mx-auto my-16 px-4" id="faq">
-      <FAQSchema />
-      <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center font-dmserif text-black dark:text-white">Frequently Asked Questions</h2>
-      <div className="space-y-4">
-        {faqs.map((faq, idx) => (
-          <div key={idx} className="border border-zinc-300 dark:border-zinc-700 rounded-lg overflow-hidden bg-white/80 dark:bg-zinc-900/80 shadow">
-            <button
-              className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-lg focus:outline-none  transition"
-              onClick={() => toggle(idx)}
-              aria-expanded={openIndex === idx}
-              aria-controls={`faq-content-${idx}`}
+    <section className="relative min-h-screen flex items-center px-4 py-12" id="faq">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-white/95 dark:bg-gray-950/95 transition-colors duration-300" aria-hidden="true"></div>
+      
+      <div className="max-w-2xl w-full mx-auto relative">
+        <FAQSchema />
+        
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl md:text-4xl font-bold mb-8 text-center font-gloock text-gray-900 dark:text-white transition-colors duration-300"
+        >
+          Frequently Asked Questions
+        </motion.h2>
+        
+        <div className="space-y-4">
+          {faqs.map((faq, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-colors duration-300"
             >
-              <span>{faq.question}</span>
-              <span className="ml-4 text-xl">{openIndex === idx ? "-" : "+"}</span>
-            </button>
-            {openIndex === idx && (
-              <div
-                id={`faq-content-${idx}`}
-                className="px-6 pb-6 text-zinc-700 dark:text-zinc-200 animate-fadein"
+              <button
+                className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-lg focus:outline-none text-gray-900 dark:text-white transition-colors duration-300"
+                onClick={() => toggle(idx)}
+                aria-expanded={openIndex === idx}
+                aria-controls={`faq-content-${idx}`}
               >
-                {faq.answer}
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-      <div className="flex justify-center mt-10">
-        <BookingButton />
+                <span className="flex-1 pr-4">{faq.question}</span>
+                <span className="text-xl flex-shrink-0">{openIndex === idx ? "-" : "+"}</span>
+              </button>
+              <motion.div
+                initial={false}
+                animate={{ 
+                  height: openIndex === idx ? "auto" : 0,
+                  opacity: openIndex === idx ? 1 : 0
+                }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="overflow-hidden"
+              >
+                <div
+                  id={`faq-content-${idx}`}
+                  className="px-6 pb-6 text-zinc-700 dark:text-zinc-200 transition-colors duration-300"
+                >
+                  {faq.answer}
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
+        
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="flex justify-center mt-10"
+        >
+          <BookingButton />
+        </motion.div>
       </div>
     </section>
   );

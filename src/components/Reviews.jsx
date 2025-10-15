@@ -1,5 +1,6 @@
 
 import BookingButton from "./Bookingbutton";
+import { motion } from "motion/react";
 
 const Reviews = () => {
   const reviews = [
@@ -81,7 +82,11 @@ const Reviews = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-950 text-white" id="reviews">
+    <section className="relative min-h-screen flex items-center py-16 text-gray-900 dark:text-white transition-colors duration-300" id="reviews">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gray-50/95 dark:bg-gray-900/95 transition-colors duration-300" aria-hidden="true"></div>
+      
+      <div className="relative w-full">
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
@@ -119,28 +124,42 @@ const Reviews = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-dmserif">
-          What Our Clients Say
-          </h2>
-          <div className="flex flex-col items-center justify-center gap-2 mb-4">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 font-dmserif transition-colors duration-300"
+          >
+            What Our Clients Say
+          </motion.h2>
+          
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="flex flex-col items-center justify-center gap-2 mb-4"
+          >
             <div className="flex">
               {renderStars(averageRating)}
             </div>
-            <div className="text-lg text-gray-300 ml-2">
+            <div className="text-lg text-gray-600 dark:text-gray-300 ml-2 transition-colors duration-300">
               {averageRating.toFixed(1)} out of 5
             </div>
-          </div>
-          {/* <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Join hundreds of satisfied customers who trust Storm for their perfect fade and beard trim
-          </p> */}
+          </motion.div>
         </div>
 
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {visibleReviews.map((review) => (
-            <div
+          {visibleReviews.map((review, idx) => (
+            <motion.div
               key={review.id}
-              className="bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-6 hover:shadow-xl hover:border-gray-600 transition-all duration-300 flex flex-col h-full"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-6 hover:shadow-xl hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-300 flex flex-col h-full"
             >
               {/* Rating */}
               <div className="flex mb-4">
@@ -148,16 +167,16 @@ const Reviews = () => {
               </div>
               
               {/* Review Text */}
-              <blockquote className="text-gray-200 mb-4 flex-grow">
+              <blockquote className="text-gray-700 dark:text-gray-200 mb-4 flex-grow transition-colors duration-300">
                 &ldquo;{review.text}&rdquo;
               </blockquote>
               
               {/* Author and Date */}
               <div className="flex items-center justify-between mt-auto">
-                <cite className="not-italic font-semibold text-white">
+                <cite className="not-italic font-semibold text-gray-900 dark:text-white transition-colors duration-300">
                   {review.author}
                 </cite>
-                <time className="text-sm text-gray-400" dateTime={review.date}>
+                <time className="text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300" dateTime={review.date}>
                   {new Date(review.date).toLocaleDateString('en-AU', {
                     year: 'numeric',
                     month: 'short',
@@ -165,19 +184,26 @@ const Reviews = () => {
                   })}
                 </time>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-12">
-          <p className="text-lg text-gray-100 mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mt-12"
+        >
+          <p className="text-lg text-gray-800 dark:text-gray-100 mb-6 transition-colors duration-300">
             Ready to experience Brisbane&apos;s best barber service?
           </p>
           <div className="flex justify-center">
             <BookingButton />
           </div>
-        </div>
+        </motion.div>
+      </div>
       </div>
     </section>
   );
