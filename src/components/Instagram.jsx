@@ -39,7 +39,7 @@ const Instagram = () => {
             href='https://www.instagram.com/faded_azf/' 
             target='_blank' 
             rel='noopener noreferrer'
-            className='inline-block mt-4 px-6 py-3 bg-gray-900 dark:bg-black text-white hover:text-zinc-100 font-semibold rounded-lg hover:bg-gray-700 dark:hover:bg-gray-800 transition-colors duration-200 shadow-lg'
+            className='inline-block mt-4 px-6 py-3 bg-gray-900 text-white hover:bg-gray-700 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100 font-semibold rounded-lg transition-colors duration-200 shadow-lg'
           >
             Follow @faded_azf
           </motion.a>
