@@ -84,9 +84,9 @@ const Reviews = () => {
   return (
     <section className="relative min-h-screen flex items-center py-16 text-gray-900 dark:text-white transition-colors duration-300" id="reviews">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gray-50/95 dark:bg-gray-900/95 transition-colors duration-300" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gray-50/95 dark:bg-gray-900/95 transition-colors duration-300 z-0" aria-hidden="true"></div>
       
-      <div className="relative w-full">
+      <div className="relative w-full z-10">
       {/* Structured Data for SEO */}
       <script
         type="application/ld+json"

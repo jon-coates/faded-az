@@ -69,9 +69,9 @@ export default function FAQ() {
   return (
     <section className="relative min-h-screen flex items-center px-4 py-12" id="faq">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/95 dark:bg-gray-950/95 transition-colors duration-300" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-white/95 dark:bg-gray-950/95 transition-colors duration-300 z-0" aria-hidden="true"></div>
       
-      <div className="max-w-2xl w-full mx-auto relative">
+      <div className="max-w-2xl w-full mx-auto relative z-10">
         <FAQSchema />
         
         <motion.h2 

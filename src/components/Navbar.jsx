@@ -4,13 +4,11 @@ import { useTheme } from './ThemeContext';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isOverHero, setIsOverHero] = useState(true);
   const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
-      setIsOverHero(window.scrollY < window.innerHeight);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -19,9 +17,8 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Logo selection logic
-  const logoSrc = isOverHero ? '/faded-az-logo.png' : 
-                  (theme === 'light' ? '/faded-az-logo-black.png' : '/faded-az-logo.png');
+  // Logo selection based on theme only
+  const logoSrc = theme === 'light' ? '/faded-az-logo-black.png' : '/faded-az-logo.png';
 
   return (
     <motion.nav 

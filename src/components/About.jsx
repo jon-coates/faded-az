@@ -2,11 +2,15 @@ import { motion } from "motion/react";
 
 const AboutBooking = () => {
   return (
-    <section className='relative mx-auto text-lg min-h-screen flex items-center bg-cover bg-center bg-no-repeat bg-fixed' id="about" style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508003/faded-az-west-end-barber-shop-4_lmuibw.jpg)' }}>
+    <section 
+      className='relative mx-auto text-lg min-h-screen flex items-center bg-cover bg-center bg-no-repeat md:bg-fixed' 
+      id="about" 
+      style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508003/faded-az-west-end-barber-shop-4_lmuibw.jpg)' }}
+    >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/80 dark:bg-gray-950/80 transition-colors duration-300" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-white/40 dark:bg-gray-950/40 transition-colors duration-300 z-0" aria-hidden="true"></div>
       
-      <div className="sm:pt-24 px-6 py-6 max-w-7xl mx-auto relative">
+      <div className="sm:pt-24 px-6 py-6 max-w-7xl mx-auto relative z-10">
 
         
         <div className="w-full mb-8">
@@ -88,7 +92,7 @@ const AboutBooking = () => {
               </p>
             </motion.div>
 
-            {/* Image Card - Right (Taller) */}
+            {/* Image Card - Right */}
             <motion.div 
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}

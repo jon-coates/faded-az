@@ -4,9 +4,9 @@ const Instagram = () => {
   return (
     <section className='relative min-h-screen flex items-center py-12 bg-cover bg-center bg-no-repeat bg-fixed' style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508016/faded-az-west-end-barber-shop-22_usnvjd.jpg)' }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/80 dark:bg-gray-950/80 transition-colors duration-300" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-white/20 dark:bg-gray-950/20 transition-colors duration-300 z-0" aria-hidden="true"></div>
       
-      <div className='max-w-2xl mx-auto px-5 relative'>
+      <div className='max-w-2xl mx-auto px-5 relative z-10'>
         {/* Title and Copy */}
         <div className='text-center mb-8'>
           <motion.h2 

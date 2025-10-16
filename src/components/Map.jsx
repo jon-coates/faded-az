@@ -5,9 +5,9 @@ const Map = () => {
   return (
     <section className='relative mx-auto text-lg min-h-screen flex flex-col justify-center bg-cover bg-center bg-no-repeat bg-fixed' id="map" style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508014/faded-az-west-end-barber-shop-18_ige9gh.jpg)' }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gray-50/80 dark:bg-gray-950/80 transition-colors duration-300" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gray-50/20 dark:bg-gray-950/20 transition-colors duration-300 z-0" aria-hidden="true"></div>
       
-      <div className="max-w-2xl mx-auto py-12 px-5 relative">
+      <div className="max-w-2xl mx-auto py-12 px-5 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ const Map = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className='flex flex-col gap-6 items-center justify-between text-gray-900 dark:text-white py-8 px-4 relative transition-colors duration-300'
+        className='flex flex-col gap-6 items-center justify-between text-gray-900 dark:text-white py-8 px-4 relative z-10 transition-colors duration-300'
       >
         <h3 className="font-dmserif text-2xl">By Appointment Only. Book Now.</h3>
         <BookingButton />
