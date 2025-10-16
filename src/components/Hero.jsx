@@ -55,7 +55,7 @@ const Hero = () => {
           transition={{ ease: "easeOut", duration: 1, delay: 1 }}
           className='font-serif text-base sm:text-lg md:text-1xl text-gray-800 dark:text-white font-medium transition-colors duration-300'
         >
-            West End&apos;s Best Barber
+            Faded Az is West End&apos;s Best Barber
         </motion.h2>
   
         <div className="top-1 mt-8">
