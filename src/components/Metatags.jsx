@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import ogimg from "../assets/og-image.png";
 
 const MetaTags = () => {
   const structuredData = {
@@ -64,7 +63,7 @@ const MetaTags = () => {
       />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://fadedaz.com.au' />
-      <meta property='og:image' content={ogimg} />
+      <meta property='og:image' content='https://res.cloudinary.com/dixfrcina/image/upload/v1760508010/faded-az-west-end-barber-shop-13_b2xn1v.jpg' />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
       <meta property='og:site_name' content='Faded Az' />
@@ -80,7 +79,7 @@ const MetaTags = () => {
         name='twitter:description'
         content='Breathtaking beards, flawless fades, and conscious conversation. Visit us in Brisbane for premium men&#39;s haircuts and beard styling.'
       />
-      <meta name='twitter:image' content={ogimg} />
+      <meta name='twitter:image' content='https://res.cloudinary.com/dixfrcina/image/upload/v1760508010/faded-az-west-end-barber-shop-13_b2xn1v.jpg' />
       <meta name='twitter:site' content='@FadedAz' />
       <meta name='twitter:creator' content='@FadedAz' />
 
