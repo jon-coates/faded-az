@@ -20,6 +20,10 @@ const Navbar = () => {
   // Logo selection based on theme only
   const logoSrc = theme === 'light' ? '/faded-az-logo-black.png' : '/faded-az-logo.png';
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <motion.nav 
       initial={{ opacity: 0, y: -20 }}
@@ -38,7 +42,8 @@ const Navbar = () => {
           transform: 'translateX(-50%)'
         }}
         alt="Faded AZ Logo"
-        className="transition-all duration-300"
+        className="transition-all duration-300 cursor-pointer"
+        onClick={scrollToTop}
       />
     </motion.nav>
   );
