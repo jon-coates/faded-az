@@ -36,26 +36,26 @@ const Hero = () => {
         {/* Tagline */}
         <h1 className='font-gloock text-5xl sm:text-7xl tracking-tighter my-2 space-x-4 flex flex-col justify-center gap-0.5 text-gray-900 dark:text-white opacity-95 dark:opacity-90 transition-colors duration-300'>
           <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 2 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeIn", duration: 1 }}
           >Breathtaking Beards.</motion.span>
           <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ ease: "easeOut", duration: 2, delay: 1  }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeIn", duration: 1, delay: 0.5  }}
           >Flawless Fades.</motion.span>
           {/* <span>Conscious Conversation</span> */}
         </h1>
   
         {/* Main h2 Heading */}
         <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 2, delay: 2 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1, delay: 1 }}
           className='font-serif text-base sm:text-lg md:text-1xl text-gray-800 dark:text-white font-medium transition-colors duration-300'
         >
-            Brisbane&apos;s Best Barber for Beards &amp; Fades
+            West End&apos;s Best Barber
         </motion.h2>
   
         <div className="top-1 mt-8">
