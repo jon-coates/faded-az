@@ -18,11 +18,10 @@ const Hero = () => {
         aria-hidden="true"
       />
       
-      {/* Fixed overlay for hero section - changes based on theme */}
+      {/* Overlay for hero section - changes based on theme */}
       <div 
-        className="fixed top-0 left-0 right-0 pointer-events-none transition-all duration-300"
+        className="absolute inset-0 pointer-events-none transition-all duration-300"
         style={{
-          height: '100vh',
           background: theme === 'light' ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.7)',
           zIndex: 1
         }}

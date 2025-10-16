@@ -67,9 +67,13 @@ export default function FAQ() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center px-4 py-12" id="faq">
+    <section 
+      className="relative min-h-screen flex items-center px-4 py-12 bg-cover bg-center bg-no-repeat md:bg-fixed" 
+      id="faq"
+      style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508007/faded-az-west-end-barber-shop-11_h1nndo.jpg)' }}
+    >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/95 dark:bg-gray-950/95 transition-colors duration-300 z-0" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-white/40 dark:bg-gray-950/40 transition-colors duration-300 z-0" aria-hidden="true"></div>
       
       <div className="max-w-2xl w-full mx-auto relative z-10">
         <FAQSchema />
