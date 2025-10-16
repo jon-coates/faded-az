@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 const AboutBooking = () => {
   return (
     <section 
-      className='relative mx-auto text-lg min-h-screen flex items-center bg-cover bg-center bg-no-repeat bg-fixed' 
+      className='relative mx-auto text-lg min-h-screen flex items-center bg-cover bg-center bg-no-repeat md:bg-fixed' 
       id="about" 
       style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508003/faded-az-west-end-barber-shop-4_lmuibw.jpg)' }}
     >

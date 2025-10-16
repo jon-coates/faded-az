@@ -25,9 +25,9 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <Instagram />
         <Map />
         <Reviews />
-        <Instagram />
         <FAQ />
         <Footer />
         <DarkModeToggle />

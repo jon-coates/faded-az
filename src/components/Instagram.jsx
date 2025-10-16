@@ -14,7 +14,7 @@ const Instagram = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className='font-dmserif text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300'
+            className='font-gloock text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300'
           >
             Follow Us For Updates
           </motion.h2>
