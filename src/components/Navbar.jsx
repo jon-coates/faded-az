@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { useTheme } from './ThemeContext';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,8 +15,8 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Logo selection based on theme only
-  const logoSrc = theme === 'light' ? '/faded-az-logo-black.png' : '/faded-az-logo.png';
+  // Logo selection - using dark theme logo
+  const logoSrc = '/faded-az-logo.png';
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });

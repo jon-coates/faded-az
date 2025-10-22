@@ -1,9 +1,7 @@
 import BookingButton from "./Bookingbutton";
 import { motion } from "motion/react";
-import { useTheme } from "./ThemeContext";
 
 const Hero = () => {
-  const { theme } = useTheme();
   
   // Responsive Cloudinary URLs with different cropping for mobile vs desktop
   const getBackgroundImage = () => {
@@ -37,7 +35,7 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${backgroundImages.desktop})`,
           zIndex: 0,
-          filter: theme === 'light' ? 'brightness(1.1)' : 'brightness(0.9)'
+          filter: 'brightness(0.9)'
         }}
         aria-hidden="true"
       />
@@ -48,7 +46,7 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${backgroundImages.mobile})`,
           zIndex: 0,
-          filter: theme === 'light' ? 'brightness(1.1)' : 'brightness(0.9)'
+          filter: 'brightness(0.9)'
         }}
         aria-hidden="true"
       />
@@ -57,7 +55,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 pointer-events-none transition-all duration-300"
         style={{
-          background: theme === 'light' ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.7)',
+          background: 'rgba(0, 0, 0, 0.7)',
           zIndex: 1
         }}
         aria-hidden="true"
@@ -69,7 +67,7 @@ const Hero = () => {
   
 
         {/* Tagline */}
-        <h1 className='font-gloock text-5xl sm:text-7xl tracking-tighter my-2 space-x-4 flex flex-col justify-center gap-0.5 text-gray-900 dark:text-white opacity-95 dark:opacity-90 transition-colors duration-300'>
+        <h1 className='font-gloock text-5xl sm:text-7xl tracking-tighter my-2 space-x-4 flex flex-col justify-center gap-0.5 text-white opacity-90'>
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,7 +86,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 1, delay: 1 }}
-          className='font-serif text-base sm:text-lg md:text-1xl text-gray-800 dark:text-white font-medium transition-colors duration-300'
+          className='font-serif text-base sm:text-lg md:text-1xl text-white font-medium'
         >
             Faded Az is West End&apos;s Best Barber
         </motion.h2>
@@ -100,7 +98,7 @@ const Hero = () => {
         <p className='my-4 font-serif text-lg'>
           <a
             href='https://www.google.com/maps?q=Faded+AZ,+314+Montague+Rd,+West+End,+QLD'
-            className='no-underline text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white hover:underline transition-colors duration-300'
+            className='no-underline text-white/80 hover:text-white hover:underline transition-colors duration-300'
             target='_blank'
             rel='noopener noreferrer'
           >

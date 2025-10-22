@@ -82,9 +82,9 @@ const Reviews = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center py-16 text-gray-900 dark:text-white transition-colors duration-300" id="reviews">
+    <section className="relative min-h-screen flex items-center py-16 text-white" id="reviews">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gray-50/95 dark:bg-gray-900/95 transition-colors duration-300 z-0" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gray-900/95 z-0" aria-hidden="true"></div>
       
       <div className="relative w-full z-10">
       {/* Structured Data for SEO */}
@@ -129,7 +129,7 @@ const Reviews = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 font-dmserif transition-colors duration-300"
+            className="text-3xl md:text-5xl font-bold text-white mb-4 font-dmserif"
           >
             What Our Clients Say
           </motion.h2>
@@ -144,7 +144,7 @@ const Reviews = () => {
             <div className="flex">
               {renderStars(averageRating)}
             </div>
-            <div className="text-lg text-gray-600 dark:text-gray-300 ml-2 transition-colors duration-300">
+            <div className="text-lg text-gray-300 ml-2">
               {averageRating.toFixed(1)} out of 5
             </div>
           </motion.div>
@@ -159,7 +159,7 @@ const Reviews = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-6 hover:shadow-xl hover:border-gray-300 dark:hover:border-gray-600 transition-colors duration-300 flex flex-col h-full"
+              className="bg-gray-800 border border-gray-700 rounded-lg shadow-lg p-6 hover:shadow-xl hover:border-gray-600 flex flex-col h-full"
             >
               {/* Rating */}
               <div className="flex mb-4">
@@ -167,16 +167,16 @@ const Reviews = () => {
               </div>
               
               {/* Review Text */}
-              <blockquote className="text-gray-700 dark:text-gray-200 mb-4 flex-grow transition-colors duration-300">
+              <blockquote className="text-gray-200 mb-4 flex-grow">
                 &ldquo;{review.text}&rdquo;
               </blockquote>
               
               {/* Author and Date */}
               <div className="flex items-center justify-between mt-auto">
-                <cite className="not-italic font-semibold text-gray-900 dark:text-white transition-colors duration-300">
+                <cite className="not-italic font-semibold text-white">
                   {review.author}
                 </cite>
-                <time className="text-sm text-gray-500 dark:text-gray-400 transition-colors duration-300" dateTime={review.date}>
+                <time className="text-sm text-gray-400" dateTime={review.date}>
                   {new Date(review.date).toLocaleDateString('en-AU', {
                     year: 'numeric',
                     month: 'short',
@@ -196,7 +196,7 @@ const Reviews = () => {
           transition={{ duration: 0.6 }}
           className="text-center mt-12"
         >
-          <p className="text-lg text-gray-800 dark:text-gray-100 mb-6 transition-colors duration-300">
+          <p className="text-lg text-gray-100 mb-6">
             Ready to experience Brisbane&apos;s best barber service?
           </p>
           <div className="flex justify-center">

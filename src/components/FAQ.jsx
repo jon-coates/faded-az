@@ -73,7 +73,7 @@ export default function FAQ() {
       style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508007/faded-az-west-end-barber-shop-11_h1nndo.jpg)' }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-white/40 dark:bg-gray-950/40 transition-colors duration-300 z-0" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gray-950/40 z-0" aria-hidden="true"></div>
       
       <div className="max-w-2xl w-full mx-auto relative z-10">
         <FAQSchema />
@@ -83,7 +83,7 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-bold mb-8 text-center font-gloock text-gray-900 dark:text-white transition-colors duration-300"
+          className="text-3xl md:text-4xl font-bold mb-8 text-center font-gloock text-white"
         >
           Frequently Asked Questions
         </motion.h2>
@@ -96,10 +96,10 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="border border-zinc-300 dark:border-zinc-700 rounded-lg bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm shadow-lg hover:shadow-xl transition-colors duration-300"
+              className="border border-zinc-700 rounded-lg bg-zinc-900/90 backdrop-blur-sm shadow-lg hover:shadow-xl"
             >
               <button
-                className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-lg focus:outline-none text-gray-900 dark:text-white transition-colors duration-300"
+                className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-lg focus:outline-none text-white"
                 onClick={() => toggle(idx)}
                 aria-expanded={openIndex === idx}
                 aria-controls={`faq-content-${idx}`}
@@ -118,7 +118,7 @@ export default function FAQ() {
               >
                 <div
                   id={`faq-content-${idx}`}
-                  className="px-6 pb-6 text-zinc-700 dark:text-zinc-200 transition-colors duration-300"
+                  className="px-6 pb-6 text-zinc-200"
                 >
                   {faq.answer}
                 </div>

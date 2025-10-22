@@ -5,7 +5,7 @@ const Map = () => {
   return (
     <section className='relative mx-auto text-lg min-h-screen flex flex-col justify-center bg-cover bg-center bg-no-repeat bg-fixed' id="map" style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508014/faded-az-west-end-barber-shop-18_ige9gh.jpg)' }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gray-50/60 dark:bg-gray-950/60 transition-colors duration-300 z-0" aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-gray-950/60 z-0" aria-hidden="true"></div>
       
       <div className="max-w-2xl mx-auto py-12 px-5 relative z-10">
         <motion.h2
@@ -13,7 +13,7 @@ const Map = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className='font-gloock text-3xl md:text-4xl mb-4 text-gray-900 dark:text-white text-center transition-colors duration-300'
+          className='font-gloock text-3xl md:text-4xl mb-4 text-white text-center'
         >
           Our Location
         </motion.h2>
@@ -22,7 +22,7 @@ const Map = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className='font-dmserif text-xl sm:text-2xl my-2 space-x-4 flex flex-col justify-center gap-0.5 text-gray-900 dark:text-white text-center transition-colors duration-300'
+          className='font-dmserif text-xl sm:text-2xl my-2 space-x-4 flex flex-col justify-center gap-0.5 text-white text-center'
         >
           Faded Az Barber Shop is Located at 314 Montague Rd, West End
         </motion.h3>
@@ -49,7 +49,7 @@ const Map = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className='flex flex-col gap-6 items-center justify-between text-gray-900 dark:text-white py-8 px-4 relative z-10 transition-colors duration-300'
+        className='flex flex-col gap-6 items-center justify-between text-white py-8 px-4 relative z-10'
       >
         <h3 className="font-dmserif text-2xl">By Appointment Only. Book Now.</h3>
         <BookingButton />
