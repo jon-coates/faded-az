@@ -5,13 +5,48 @@ import { useTheme } from "./ThemeContext";
 const Hero = () => {
   const { theme } = useTheme();
   
+  // Responsive Cloudinary URLs with different cropping for mobile vs desktop
+  const getBackgroundImage = () => {
+    const baseUrl = 'https://res.cloudinary.com/dixfrcina/image/upload';
+    
+    // Original image for mobile
+    const originalImageId = 'v1758201585/faded-az-west-end-barber-internal-02_onkvts';
+    
+    // New image for desktop
+    const newImageId = 'v1760508006/faded-az-west-end-barber-shop-7_pjsanj';
+    
+    // For mobile: use new image with east gravity cropping
+    const mobileUrl = `${baseUrl}/w_768,h_1024,c_fill,g_east,q_auto,f_auto/${newImageId}`;
+    
+    // For desktop: use original image with smart cropping
+    const desktopUrl = `${baseUrl}/w_1080,h_720,c_fill,g_auto,q_auto,f_auto/${originalImageId}`;
+    
+    return {
+      mobile: mobileUrl,
+      desktop: desktopUrl
+    };
+  };
+  
+  const backgroundImages = getBackgroundImage();
+  
   return (
     <header className='relative w-screen text-white flex items-center justify-center min-h-screen' role="banner">
-      {/* Fixed background image for hero */}
+      {/* Fixed background image for hero - responsive with different crops */}
       <div 
         className="fixed inset-0 bg-cover bg-center bg-no-repeat transition-all duration-300"
         style={{
-          backgroundImage: `url(https://res.cloudinary.com/dixfrcina/image/upload/w_1080/v1758201585/faded-az-west-end-barber-internal-02_onkvts.jpg)`,
+          backgroundImage: `url(${backgroundImages.desktop})`,
+          zIndex: 0,
+          filter: theme === 'light' ? 'brightness(1.1)' : 'brightness(0.9)'
+        }}
+        aria-hidden="true"
+      />
+      
+      {/* Mobile-specific background with better cropping */}
+      <div 
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat transition-all duration-300 sm:hidden"
+        style={{
+          backgroundImage: `url(${backgroundImages.mobile})`,
           zIndex: 0,
           filter: theme === 'light' ? 'brightness(1.1)' : 'brightness(0.9)'
         }}

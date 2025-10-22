@@ -15,7 +15,7 @@ import DarkModeToggle from "./components/DarkModeToggle";
 
 function App() {
   return (
-    <div className="bg-white dark:bg-gray-950 transition-colors duration-300">
+    <div className="font-gloock font-serif bg-white dark:bg-gray-950 transition-colors duration-300">
       {/* Content sections - all relative positioned */}
       <div className="relative" style={{ zIndex: 10 }}>
         <MetaTags />
@@ -30,7 +30,7 @@ function App() {
         <Reviews />
         <FAQ />
         <Footer />
-        <DarkModeToggle />
+        {/* <DarkModeToggle /> */}
       </div>
     </div>
   );

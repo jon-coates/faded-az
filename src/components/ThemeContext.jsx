@@ -12,15 +12,15 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    // Check localStorage first, fallback to system preference
+    // Check localStorage first, fallback to dark mode
     if (typeof window !== 'undefined') {
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
         return savedTheme;
       }
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      return 'dark'; // Default to dark mode
     }
-    return 'light';
+    return 'dark'; // Default to dark mode for SSR fallback too
   });
 
   useEffect(() => {
