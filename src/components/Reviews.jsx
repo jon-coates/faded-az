@@ -62,18 +62,18 @@ const Reviews = () => {
     },
     {
       id: 8,
-      author: "Anonymous",
+      author: "Hamish Caulfield",
       rating: 5,
       text: "I've been getting my hair cut by Storm for the past six years, and he never misses. Always delivers a clean, fresh fade and the chats are just as good. Storm's a vibe and a half - couldn't recommend him more.",
-      date: "2026-02-26",
+      date: "2025-12-26",
       display: true
     },
     {
       id: 9,
-      author: "Anonymous",
+      author: "Bréhan De Gouvello",
       rating: 5,
       text: "Storm is an absolute legend. He gave me an amazing hair and beard cut, and it was my first time at Faded Az, but it genuinely felt like I'd been going there forever. Great cut, great experience, and super attentive to detail. 100% recommend.",
-      date: "2026-02-26",
+      date: "2026-02-05",
       display: true
     }
   ];
