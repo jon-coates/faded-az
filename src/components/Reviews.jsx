@@ -59,6 +59,22 @@ const Reviews = () => {
       text: "Storm does a great fade & beard trim, and is always up for a great chat. I have been getting cuts by him for years now across different barber shops and it's great to have him back in West End – in his own shop finally!",
       date: "2024-07-25", // Specific date mentioned
       display: true
+    },
+    {
+      id: 8,
+      author: "Hamish Caulfield",
+      rating: 5,
+      text: "I've been getting my hair cut by Storm for the past six years, and he never misses. Always delivers a clean, fresh fade and the chats are just as good. Storm's a vibe and a half - couldn't recommend him more.",
+      date: "2025-12-26",
+      display: true
+    },
+    {
+      id: 9,
+      author: "Bréhan De Gouvello",
+      rating: 5,
+      text: "Storm is an absolute legend. He gave me an amazing hair and beard cut, and it was my first time at Faded Az, but it genuinely felt like I'd been going there forever. Great cut, great experience, and super attentive to detail. 100% recommend.",
+      date: "2026-02-05",
+      display: true
     }
   ];
 
