@@ -21,7 +21,15 @@ const MetaTags = () => {
       "latitude": -27.481246915237495,
       "longitude": 153.00006848710146
     },
-    "openingHours": "Mo-Fr 09:00-18:00, Sa 09:00-17:00",
+    "openingHours": "We-Fr 08:00-20:00",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      }
+    ],
     "priceRange": "$$",
     "currenciesAccepted": "AUD",
     "paymentAccepted": "Cash, Credit Card",

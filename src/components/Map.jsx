@@ -17,7 +17,7 @@ const Map = () => {
         >
           Our Location
         </motion.h2>
-        <motion.h3 
+        <motion.h3
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -26,6 +26,20 @@ const Map = () => {
         >
           Faded Az Barber Shop is Located at 314 Montague Rd, West End
         </motion.h3>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className='text-center text-white mt-4 mb-6'
+        >
+          <p className='font-semibold text-lg mb-2 tracking-wide uppercase text-zinc-300'>Hours</p>
+          <div className='space-y-1 font-dmserif text-lg'>
+            <p><span className='text-zinc-300'>Wed – Fri</span>&nbsp;&nbsp;8:00 am – 8:00 pm</p>
+            <p className='text-zinc-400 text-base'>Closed Sat – Tue</p>
+          </div>
+        </motion.div>
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}

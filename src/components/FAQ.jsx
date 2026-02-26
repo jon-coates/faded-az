@@ -34,6 +34,11 @@ const faqs = [
     answer:
       "Nah, we're appointment-only. Trust us, it's better this way - no sitting around for hours, no rushed cuts, just proper service when it's your time. Book ahead and you're guaranteed that quality everyone's talking about. We'd rather do fewer cuts properly than heaps of average ones.",
   },
+  {
+    question: "What are your opening hours?",
+    answer:
+      "We're open Wednesday, Thursday, and Friday from 8:00 am to 8:00 pm. Closed Saturday through Tuesday. We're appointment-only, so book your slot online to lock in your time.",
+  },
 ];
 
 const FAQSchema = () => {
