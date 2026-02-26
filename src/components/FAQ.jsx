@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "What are your opening hours?",
     answer:
-      "We're open Wednesday, Thursday, and Friday from 8:00 am to 8:00 pm, and Saturday from 8:00 am to 2:30 pm. Closed Sunday through Tuesday. We're appointment-only, so book your slot online to lock in your time.",
+      "We're open Wednesday, Thursday, and Friday from 8:00 am to 8:00 pm. Closed Saturday through Tuesday. We're appointment-only, so book your slot online to lock in your time.",
   },
 ];
 

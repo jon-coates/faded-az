@@ -37,8 +37,7 @@ const Map = () => {
           <p className='font-semibold text-lg mb-2 tracking-wide uppercase text-zinc-300'>Hours</p>
           <div className='space-y-1 font-dmserif text-lg'>
             <p><span className='text-zinc-300'>Wed – Fri</span>&nbsp;&nbsp;8:00 am – 8:00 pm</p>
-            <p><span className='text-zinc-300'>Saturday</span>&nbsp;&nbsp;8:00 am – 2:30 pm</p>
-            <p className='text-zinc-400 text-base'>Closed Sun – Tue</p>
+            <p className='text-zinc-400 text-base'>Closed Sat – Tue</p>
           </div>
         </motion.div>
         

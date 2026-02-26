@@ -21,19 +21,13 @@ const LocalBusinessSchema = () => {
       "latitude": -27.481246915237495,
       "longitude": 153.00006848710146
     },
-    "openingHours": ["We-Fr 08:00-20:00", "Sa 08:00-14:30"],
+    "openingHours": "We-Fr 08:00-20:00",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
         "opens": "08:00",
         "closes": "20:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Saturday"],
-        "opens": "08:00",
-        "closes": "14:30"
       }
     ],
     "priceRange": "$$",
