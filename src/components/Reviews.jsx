@@ -5,6 +5,22 @@ import { motion } from "motion/react";
 const Reviews = () => {
   const reviews = [
     {
+      id: 9,
+      author: "Bréhan De Gouvello",
+      rating: 5,
+      text: "Storm is an absolute legend. He gave me an amazing hair and beard cut, and it was my first time at Faded Az, but it genuinely felt like I'd been going there forever. Great cut, great experience, and super attentive to detail. 100% recommend.",
+      date: "2026-02-05",
+      display: true
+    },
+    {
+      id: 8,
+      author: "Hamish Caulfield",
+      rating: 5,
+      text: "I've been getting my hair cut by Storm for the past six years, and he never misses. Always delivers a clean, fresh fade and the chats are just as good. Storm's a vibe and a half - couldn't recommend him more.",
+      date: "2025-12-26",
+      display: true
+    },
+    {
       id: 1,
       author: "Simron Gill",
       rating: 5,
@@ -17,7 +33,7 @@ const Reviews = () => {
       author: "Josef",
       rating: 5,
       text: "Been going to Storm for years now. Started with a walk in experience that turned into appointments that are super flexible and often finds time to shuffle to fit in with my schedule. Always consistent with the skin fades and tracks and can confidently say I've never had a bad cut from my guy in almost 3-4 years. Do yourself a favour and get fresh, support a local business and let him show you why he's your go to option for long term haircuts.",
-      date: "2024-12-13", // 37 weeks ago
+      date: "2024-12-13",
       display: true
     },
     {
@@ -25,7 +41,7 @@ const Reviews = () => {
       author: "Jake Evans",
       rating: 5,
       text: "Best haircut and banter in brisbane, go see Storm to make you sexy again",
-      date: "2024-12-06", // 38 weeks ago
+      date: "2024-12-06",
       display: true
     },
     {
@@ -33,7 +49,7 @@ const Reviews = () => {
       author: "Stel",
       rating: 5,
       text: "Best barber, made my partners hair look incredible. Thank you Storm",
-      date: "2024-12-01", // 38 weeks ago
+      date: "2024-12-01",
       display: true
     },
     {
@@ -41,7 +57,7 @@ const Reviews = () => {
       author: "Liam Pahl",
       rating: 5,
       text: "Best barber in Brisbane hands down.",
-      date: "2024-11-25", // 42 weeks ago
+      date: "2024-11-25",
       display: false
     },
     {
@@ -49,7 +65,7 @@ const Reviews = () => {
       author: "Ben Grant",
       rating: 5,
       text: "Best barber in Brisbane hands down. Storm had a great attention to detail in his haircuts. You won't find a better service!",
-      date: "2024-07-28", // Specific date mentioned
+      date: "2024-07-28",
       display: true
     },
     {
@@ -57,23 +73,7 @@ const Reviews = () => {
       author: "Jon Coates",
       rating: 5,
       text: "Storm does a great fade & beard trim, and is always up for a great chat. I have been getting cuts by him for years now across different barber shops and it's great to have him back in West End – in his own shop finally!",
-      date: "2024-07-25", // Specific date mentioned
-      display: true
-    },
-    {
-      id: 8,
-      author: "Hamish Caulfield",
-      rating: 5,
-      text: "I've been getting my hair cut by Storm for the past six years, and he never misses. Always delivers a clean, fresh fade and the chats are just as good. Storm's a vibe and a half - couldn't recommend him more.",
-      date: "2025-12-26",
-      display: true
-    },
-    {
-      id: 9,
-      author: "Bréhan De Gouvello",
-      rating: 5,
-      text: "Storm is an absolute legend. He gave me an amazing hair and beard cut, and it was my first time at Faded Az, but it genuinely felt like I'd been going there forever. Great cut, great experience, and super attentive to detail. 100% recommend.",
-      date: "2026-02-05",
+      date: "2024-07-25",
       display: true
     }
   ];
