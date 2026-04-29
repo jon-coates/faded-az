@@ -25,7 +25,7 @@ export default function ReviewsPage() {
           transition={{ duration: 0.8 }}
           className="font-gloock text-5xl sm:text-7xl tracking-tighter"
         >
-          What Our Clients Say
+          Reviews
         </motion.h1>
       </div>
 
