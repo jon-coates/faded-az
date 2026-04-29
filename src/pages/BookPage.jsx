@@ -43,7 +43,7 @@ export default function BookPage() {
           <iframe
             src="https://bookings.gettimely.com/fadedaz/book"
             title="Faded Az booking form"
-            className="w-full h-[1400px] sm:h-[1200px] border-0"
+            className="w-full h-[900px] sm:h-[800px] border-0"
             loading="lazy"
           />
         </div>
