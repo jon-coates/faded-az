@@ -10,10 +10,12 @@ export default {
   theme: {
 extend: {
       fontFamily: {
-        koulen: ['Koulen', 'sans-serif'], // Define Koulen font
+        sans: ['DM Mono', 'monospace'],
+        mono: ['DM Mono', 'monospace'],
+        koulen: ['Koulen', 'sans-serif'],
         dmserif: ['DM Serif Display', 'serif'],
-        bbh: ['BBH Sans Hegarty', 'sans-serif'], // BBH Sans Hegarty font
-        gloock: ['Gloock', 'serif'], // Gloock font
+        bbh: ['BBH Sans Hegarty', 'sans-serif'],
+        gloock: ['Gloock', 'serif'],
       },
       keyframes: {
         'pulse-horizontal': {
