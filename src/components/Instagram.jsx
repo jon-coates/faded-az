@@ -1,8 +1,42 @@
 import { motion } from "motion/react";
 
 const Instagram = () => {
+  // Responsive Cloudinary URLs with different cropping for mobile vs desktop
+  const getBackgroundImage = () => {
+    const baseUrl = 'https://res.cloudinary.com/dixfrcina/image/upload';
+    
+    // New image for mobile
+    const mobileImageId = 'v1760508010/faded-az-west-end-barber-shop-13_b2xn1v';
+    
+    // Original image for desktop
+    const desktopImageId = 'v1760508016/faded-az-west-end-barber-shop-22_usnvjd';
+    
+    // For mobile: use new image with east gravity cropping
+    const mobileUrl = `${baseUrl}/w_768,h_1024,c_fill,g_east,q_auto,f_auto/${mobileImageId}`;
+    
+    // For desktop: use original image with smart cropping
+    const desktopUrl = `${baseUrl}/w_1080,h_720,c_fill,g_auto,q_auto,f_auto/${desktopImageId}`;
+    
+    return {
+      mobile: mobileUrl,
+      desktop: desktopUrl
+    };
+  };
+  
+  const backgroundImages = getBackgroundImage();
+
   return (
-    <section className='relative min-h-screen flex items-center py-12 bg-cover bg-center bg-no-repeat bg-fixed' style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508016/faded-az-west-end-barber-shop-22_usnvjd.jpg)' }}>
+    <section className='relative min-h-screen flex items-center py-12 bg-cover bg-center bg-no-repeat bg-fixed' style={{ backgroundImage: `url(${backgroundImages.desktop})` }}>
+      {/* Mobile-specific background with better cropping */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed sm:hidden"
+        style={{
+          backgroundImage: `url(${backgroundImages.mobile})`,
+          zIndex: 0
+        }}
+        aria-hidden="true"
+      />
+      
       {/* Overlay */}
       <div className="absolute inset-0 bg-gray-950/60 z-0" aria-hidden="true"></div>
       
