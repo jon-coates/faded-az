@@ -1,33 +1,33 @@
-// import React from 'react';
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Reviews from "./components/Reviews";
+import { Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
-import Instagram from "./components/Instagram";
-import MetaTags from "./components/Metatags";
 import LocalBusinessSchema from "./components/LocalBusinessSchema";
 import PerformanceOptimizer from "./components/PerformanceOptimizer";
 import TimelyScript from "./components/TimelyScript";
-import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import Map from "./components/Map";
+
+import HomePage from "./pages/HomePage";
+import BookPage from "./pages/BookPage";
+import ServicesPage from "./pages/ServicesPage";
+import FindUsPage from "./pages/FindUsPage";
+import ReviewsPage from "./pages/ReviewsPage";
 
 function App() {
   return (
-    <div className="font-gloock font-serif bg-gray-950">
-      {/* Content sections - all relative positioned */}
+    <div className="bg-gray-950">
       <div className="relative" style={{ zIndex: 10 }}>
-        <MetaTags />
         <LocalBusinessSchema />
         <PerformanceOptimizer />
         <TimelyScript />
         <Navbar />
-        <Hero />
-        <About />
-        <Instagram />
-        <Map />
-        <Reviews />
-        <FAQ />
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/book" element={<BookPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/find-us" element={<FindUsPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
+        </Routes>
+
         <Footer />
       </div>
     </div>

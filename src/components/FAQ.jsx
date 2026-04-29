@@ -104,7 +104,7 @@ export default function FAQ() {
               className="border border-zinc-700 rounded-lg bg-zinc-900/90 backdrop-blur-sm shadow-lg hover:shadow-xl"
             >
               <button
-                className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-lg focus:outline-none text-white"
+                className="w-full flex justify-between items-center px-6 py-4 text-left font-gloock text-lg focus:outline-none text-white"
                 onClick={() => toggle(idx)}
                 aria-expanded={openIndex === idx}
                 aria-controls={`faq-content-${idx}`}
