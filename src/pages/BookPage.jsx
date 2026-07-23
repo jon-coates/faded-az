@@ -51,7 +51,7 @@ export default function BookPage() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-lg text-gray-200 mb-8"
           >
-            Faded Az is appointment-only — slots fill fast. We're open
+            Faded Az is appointment-only — slots fill fast. We&apos;re open
             Wednesday to Friday, 8 am – 8 pm at 314 Montague Rd, West End.
           </motion.p>
 
