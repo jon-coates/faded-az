@@ -6,7 +6,7 @@ export default function ReviewsPage() {
   return (
     <>
       <Helmet>
-        <title>Customer Reviews | Faded Az – Brisbane's Best Barber West End</title>
+        <title>Customer Reviews | Faded Az – Brisbane&apos;s Best Barber West End</title>
         <meta
           name="description"
           content="See what clients say about Faded Az barber in West End, Brisbane. 5-star reviews for fades, haircuts and beard trims. Book your appointment today."
