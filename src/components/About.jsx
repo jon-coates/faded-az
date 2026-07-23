@@ -5,7 +5,7 @@ const AboutBooking = () => {
     <section 
       className='relative mx-auto text-lg min-h-screen flex items-center bg-cover bg-center bg-no-repeat md:bg-fixed' 
       id="about" 
-      style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508003/faded-az-west-end-barber-shop-4_lmuibw.jpg)' }}
+      style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/w_1920,q_auto,f_auto/v1760508003/faded-az-west-end-barber-shop-4_lmuibw.jpg)' }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gray-950/40 z-0" aria-hidden="true"></div>
@@ -25,10 +25,11 @@ const AboutBooking = () => {
               >
               {/* Image Section - Top Half */}
               <div className="h-80">
-                <img 
-                  src="https://res.cloudinary.com/dixfrcina/image/upload/v1758200783/faded-az-barber-west-end-interior-01.jpg" 
-                  alt="Faded Az Barber West End Interior" 
+                <img
+                  src="https://res.cloudinary.com/dixfrcina/image/upload/w_1000,q_auto,f_auto/v1758200783/faded-az-barber-west-end-interior-01.jpg"
+                  alt="Faded Az Barber West End Interior"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               
@@ -100,10 +101,11 @@ const AboutBooking = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex-1 rounded-xl shadow-2xl border border-gray-800 overflow-hidden -ml-8 h-[500px]"
               >
-              <img 
-                src="https://res.cloudinary.com/dixfrcina/image/upload/v1758200783/faded-az-barber-west-end-interior-01.jpg" 
-                alt="Faded Az Barber West End Interior" 
+              <img
+                src="https://res.cloudinary.com/dixfrcina/image/upload/w_1000,q_auto,f_auto/v1758200783/faded-az-barber-west-end-interior-01.jpg"
+                alt="Faded Az Barber West End Interior"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </motion.div>
           </div>

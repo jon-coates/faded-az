@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const Map = () => {
   return (
-    <section className='relative mx-auto text-lg min-h-screen flex flex-col justify-center bg-cover bg-center bg-no-repeat bg-fixed' id="map" style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/v1760508014/faded-az-west-end-barber-shop-18_ige9gh.jpg)' }}>
+    <section className='relative mx-auto text-lg min-h-screen flex flex-col justify-center bg-cover bg-center bg-no-repeat md:bg-fixed' id="map" style={{ backgroundImage: 'url(https://res.cloudinary.com/dixfrcina/image/upload/w_1920,q_auto,f_auto/v1760508014/faded-az-west-end-barber-shop-18_ige9gh.jpg)' }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-gray-950/60 z-0" aria-hidden="true"></div>
       
