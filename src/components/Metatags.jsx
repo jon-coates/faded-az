@@ -1,45 +1,6 @@
 import { Helmet } from "react-helmet";
 
 const MetaTags = () => {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "HairSalon",
-    "name": "Faded Az",
-    "description": "Brisbane's premier barber shop specialising in flawless fades, breathtaking beards, and conscious conversation",
-    "url": "https://fadedaz.com.au",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "314 Montague Rd",
-      "addressLocality": "West End",
-      "addressRegion": "QLD",
-      "postalCode": "4101",
-      "addressCountry": "AU"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -27.481246915237495,
-      "longitude": 153.00006848710146
-    },
-    "openingHours": "We-Fr 08:00-20:00",
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "20:00"
-      }
-    ],
-    "priceRange": "$$",
-    "currenciesAccepted": "AUD",
-    "paymentAccepted": "Cash, Credit Card",
-    "areaServed": "Brisbane, West End, South East Queensland",
-    "serviceType": ["Men's Haircuts", "Beard Trimming", "Fades", "Hair Styling"],
-    "image": "https://fadedaz.com.au/faded-az-logo.png",
-    "sameAs": [
-      "https://www.instagram.com/faded_azf/"
-    ]
-  };
-
   return (
     <Helmet>
       {/* General Meta Tags */}
@@ -106,10 +67,8 @@ const MetaTags = () => {
       {/* Canonical URL */}
       <link rel="canonical" href="https://fadedaz.com.au" />
 
-      {/* Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify(structuredData)}
-      </script>
+      {/* Structured data (LocalBusiness/BarberShop) is provided site-wide by
+          LocalBusinessSchema.jsx, mounted in App.jsx */}
     </Helmet>
   );
 };
