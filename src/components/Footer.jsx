@@ -10,7 +10,7 @@ function Footer() {
         transition={{ duration: 0.6 }}
         className="flex justify-center mb-2"
       >
-        <img src="/faded-az-logo.png" className="max-h-[50px]" alt="Faded AZ Logo" />
+        <img src="/faded-az-logo.png" className="max-h-[50px]" alt="Faded AZ Logo" loading="lazy" />
       </motion.div>
       <motion.p
         initial={{ opacity: 0 }}

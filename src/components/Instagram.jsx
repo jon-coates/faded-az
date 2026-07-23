@@ -26,10 +26,10 @@ const Instagram = () => {
   const backgroundImages = getBackgroundImage();
 
   return (
-    <section className='relative min-h-screen flex items-center py-12 bg-cover bg-center bg-no-repeat bg-fixed' style={{ backgroundImage: `url(${backgroundImages.desktop})` }}>
+    <section className='relative min-h-screen flex items-center py-12 bg-cover bg-center bg-no-repeat md:bg-fixed' style={{ backgroundImage: `url(${backgroundImages.desktop})` }}>
       {/* Mobile-specific background with better cropping */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed sm:hidden"
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat sm:hidden"
         style={{
           backgroundImage: `url(${backgroundImages.mobile})`,
           zIndex: 0
