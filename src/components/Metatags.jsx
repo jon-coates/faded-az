@@ -7,7 +7,6 @@ const MetaTags = () => {
     "name": "Faded Az",
     "description": "Brisbane's premier barber shop specialising in flawless fades, breathtaking beards, and conscious conversation",
     "url": "https://fadedaz.com.au",
-    "telephone": "+61-7-1234-5678",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "314 Montague Rd",
