@@ -26,18 +26,22 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Faded Az - Brisbane's Premier Barber West End Haircuts & Beard Trimming</title>
-    <meta name="description" content="Experience breathtaking beards, flawless fades, and conscious conversation at Faded Az, Brisbane's go-to barber in West End. Book your appointment today for premium men's haircuts and beard styling." />
+
+    <!--
+      Route-specific tags (title, description, canonical, robots, og:title,
+      og:url, og:description, and structured data) are injected here at
+      build time by scripts/prerender.mjs, one set per route. Do not add
+      those tags statically below — they'd not be duplicated by every page,
+      but the ones that ARE the same on every route stay static.
+    -->
+    <!--ssr-head-->
+
+    <!-- Fallback social/meta tags that don't vary per route -->
     <meta name="keywords" content="Barber Brisbane, Men Haircuts West End, Beard Trimming Brisbane, Fades Brisbane, Hair Styling Brisbane, West End Barber, Brisbane Barber Shop, Professional Haircuts, Beard Styling, Skin Fades, Textured Crops, Modern Mullets" />
     <meta name="author" content="Faded Az" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://fadedaz.com.au" />
-    <meta property="og:title" content="Faded Az - Brisbane's Premier Barber - West End Haircuts & Beard Trimming" />
-    <meta property="og:description" content="Breathtaking beards, flawless fades, and conscious conversation. Located in West End, Brisbane. Book your appointment for premium men's haircuts and beard styling" />
     <meta property="og:image" content="https://fadedaz.com.au/ogimage.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -47,17 +51,8 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://fadedaz.com.au" />
-    <meta name="twitter:title" content="Faded Az - Brisbane's Premier Barber | West End Haircuts & Beard Trimming" />
-    <meta name="twitter:description" content="Breathtaking beards, flawless fades, and conscious conversation. Visit us in Brisbane for premium men's haircuts and beard styling." />
     <meta name="twitter:image" content="https://fadedaz.com.au/ogimage.png" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://fadedaz.com.au" />
-    
-    <!-- Robots -->
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    
+
     <!-- Critical CSS inlined for faster rendering -->
     <style>
       :root{font-family:'DM Mono',monospace;line-height:1.5;font-weight:400;color-scheme:light dark;color:rgba(255,255,255,.87);background-color:#242424;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{margin:0;min-width:320px;min-height:100vh}#root{min-height:100vh;width:100%}button{border-radius:8px;border:1px solid transparent;padding:.6em 1.2em;font-size:1em;font-weight:500;font-family:inherit;background-color:#1a1a1a;cursor:pointer;transition:border-color .25s}a{font-weight:500;color:#646cff;text-decoration:inherit}h1{font-size:3.2em;line-height:1.1}
