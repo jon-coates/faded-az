@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import LocalBusinessSchema from "./components/LocalBusinessSchema";
 import PerformanceOptimizer from "./components/PerformanceOptimizer";
-import TimelyScript from "./components/TimelyScript";
 import Footer from "./components/Footer";
 
 import HomePage from "./pages/HomePage";
@@ -17,7 +16,6 @@ function App() {
       <div className="relative" style={{ zIndex: 10 }}>
         <LocalBusinessSchema />
         <PerformanceOptimizer />
-        <TimelyScript />
         <Navbar />
 
         <Routes>
