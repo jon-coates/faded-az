@@ -216,7 +216,7 @@ const Reviews = () => {
             Ready to experience Brisbane&apos;s best barber service?
           </p>
           <div className="flex justify-center">
-            <BookingButton />
+            <BookingButton location="reviews_section" />
           </div>
         </motion.div>
       </div>

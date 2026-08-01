@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { BOOKING_URL, trackBookingClick } from "../lib/analytics";
 
 const AboutBooking = () => {
   return (
@@ -54,7 +55,7 @@ const AboutBooking = () => {
                   From precision fades to tailored beard trims, it&apos;s about craftsmanship, conversation, and a space where you can slow down for a moment.
                 </p>
                 <p className='mb-4 text-gray-50'>
-                  Appointments are essential — <a href="https://bookings.gettimely.com/fadedaz/book" className="underline decoration-red-600 hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer">book ahead</a> and secure your spot.
+                  Appointments are essential — <a href={BOOKING_URL} className="underline decoration-red-600 hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer" onClick={() => trackBookingClick({ location: "about_section_mobile", label: "book ahead" })}>book ahead</a> and secure your spot.
                 </p>
               </div>
             </motion.div>
@@ -89,7 +90,7 @@ const AboutBooking = () => {
                 From precision fades to tailored beard trims, it&apos;s about craftsmanship, conversation, and a space where you can slow down for a moment.
               </p>
               <p className='mb-4 text-gray-300'>
-                Appointments are essential — <a href="https://bookings.gettimely.com/fadedaz/book" className="underline decoration-red-600 hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer">book ahead</a> and secure your spot.
+                Appointments are essential — <a href={BOOKING_URL} className="underline decoration-red-600 hover:text-white transition-colors duration-200" target="_blank" rel="noopener noreferrer" onClick={() => trackBookingClick({ location: "about_section_desktop", label: "book ahead" })}>book ahead</a> and secure your spot.
               </p>
             </motion.div>
 

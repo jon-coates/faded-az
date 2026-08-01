@@ -69,7 +69,7 @@ export default function ServicesPage() {
 
       <div className="bg-gray-950 text-white text-center py-12">
         <p className="text-lg text-gray-300 mb-6">Ready to book your next cut?</p>
-        <BookingButton />
+        <BookingButton location="services_page" />
       </div>
     </>
   );

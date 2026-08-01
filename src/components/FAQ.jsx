@@ -139,7 +139,7 @@ export default function FAQ() {
           transition={{ duration: 0.6 }}
           className="flex justify-center mt-10"
         >
-          <BookingButton />
+          <BookingButton location="faq_section" />
         </motion.div>
       </div>
     </section>

@@ -92,7 +92,7 @@ const Hero = () => {
         </motion.h2>
   
         <div className="top-1 mt-8">
-          <BookingButton />
+          <BookingButton location="hero" />
 
         {/* Address */}
         <p className='my-4 font-serif text-lg'>

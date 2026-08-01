@@ -66,7 +66,7 @@ const Map = () => {
         className='flex flex-col gap-6 items-center justify-between text-white py-8 px-4 relative z-10'
       >
         <h3 className="font-dmserif text-2xl">By Appointment Only. Book Now.</h3>
-        <BookingButton />
+        <BookingButton location="map_section" />
       </motion.div>
     </section>
   );

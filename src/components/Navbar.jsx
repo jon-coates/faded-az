@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import { trackBookingNavClick } from '../lib/analytics';
 
 const NAV_LINKS = [
   { to: '/services', label: 'Services'  },
@@ -64,6 +65,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/book"
+              onClick={() => trackBookingNavClick({ location: 'navbar_desktop' })}
               className="font-mono text-sm font-light tracking-normal bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition-colors duration-200"
             >
               Book Now
@@ -118,6 +120,7 @@ const Navbar = () => {
             ))}
             <Link
               to="/book"
+              onClick={() => trackBookingNavClick({ location: 'navbar_mobile' })}
               className="font-mono text-base font-light bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded text-center transition-colors duration-200 mt-2"
             >
               Book Now
