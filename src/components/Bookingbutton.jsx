@@ -1,19 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import "@fontsource/bbh-sans-hegarty"; // Import BBH Sans Hegarty font
 
 export default function BookingButton() {
   return (
-      <a
-        href="https://bookings.gettimely.com/fadedaz/book"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center px-6 py-3 text-red-950 border-black/50 font-bold font-bbh rounded-lg shadow-lg backdrop-blur-sm uppercase tracking-wider bg-red-500/90 hover:bg-red-600/95 hover:scale-105 hover:-translate-y-0.5 hover:shadow-xl active:scale-95 active:shadow-md transition-all duration-300 ease-in-out"
-      >
-        Book Now
-        <span className="ml-2 inline-block animate-pulse-horizontal">
-          <FontAwesomeIcon icon={faArrowRight} />
-        </span>
-      </a>
+    <a
+      href="https://bookings.gettimely.com/fadedaz/book"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center font-mono text-sm font-light tracking-normal bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded transition-colors duration-200"
+    >
+      Book Now
+      <span className="ml-2 inline-block animate-pulse-horizontal">
+        <FontAwesomeIcon icon={faArrowRight} />
+      </span>
+    </a>
   );
 }
