@@ -5,6 +5,46 @@ import { motion } from "motion/react";
 const Reviews = () => {
   const reviews = [
     {
+      id: 14,
+      author: "Benjamin S",
+      rating: 5,
+      text: "I don't write reviews often, but if I'm taking the time today to do it it's definitely to recommend this place, Storm is really nice person and definitely good at his job. Love the haircut and the time share with you! Thanks again.",
+      date: "2026-08-28",
+      display: true
+    },
+    {
+      id: 13,
+      author: "Elijah Appo",
+      rating: 5,
+      text: "Storm is amazing, mad chats even better cuts honestly recommend to anyone anytime!!!!",
+      date: "2026-06-29",
+      display: true
+    },
+    {
+      id: 12,
+      author: "Ben Johannssen",
+      rating: 5,
+      text: "Storm was an absolute legend, best haircut I've gotten. Can't thank him more.",
+      date: "2026-06-25",
+      display: true
+    },
+    {
+      id: 11,
+      author: "Robert Kelly",
+      rating: 5,
+      text: "Been going to Storm for over 5 years now. Struggled to find a great quality mens barber before, but haven't had to worry about that since. Fantastic work and service.",
+      date: "2026-02-28",
+      display: true
+    },
+    {
+      id: 10,
+      author: "Luke Rokotoro",
+      rating: 5,
+      text: "Best barber experience I've had in a long time. If the hair cut doesn't get you buzzing (trust me it will) bro lining you up will 🔥🙏🏽 ill be coming back for sure!",
+      date: "2026-02-25",
+      display: true
+    },
+    {
       id: 9,
       author: "Bréhan De Gouvello",
       rating: 5,
