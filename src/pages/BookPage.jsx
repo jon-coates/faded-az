@@ -1,11 +1,32 @@
+import { useEffect, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "motion/react";
-import BookingButton from "../components/Bookingbutton";
 
 const BG_DESKTOP = "https://res.cloudinary.com/dixfrcina/image/upload/w_1080,h_720,c_fill,g_auto,q_auto,f_auto/v1758201585/faded-az-west-end-barber-internal-02_onkvts";
 const BG_MOBILE  = "https://res.cloudinary.com/dixfrcina/image/upload/w_768,h_1024,c_fill,g_east,q_auto,f_auto/v1760508006/faded-az-west-end-barber-shop-7_pjsanj";
 
+const SQUARE_WIDGET_SCRIPT_SRC = "https://app.squareup.com/appointments/buyer/widget/31w3r8dzktj7ew/MVD47PERRN5WR.js";
+
 export default function BookPage() {
+  const widgetContainerRef = useRef(null);
+
+  useEffect(() => {
+    const container = widgetContainerRef.current;
+    if (!container) return;
+
+    // Square's widget script inserts the booking form at its own <script>
+    // tag's position, so it's appended into this scoped container rather
+    // than loaded globally — keeps it confined to this page only.
+    const script = document.createElement("script");
+    script.src = SQUARE_WIDGET_SCRIPT_SRC;
+    script.async = false;
+    container.appendChild(script);
+
+    return () => {
+      container.innerHTML = "";
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -21,7 +42,7 @@ export default function BookPage() {
         <meta property="og:description" content="Book your appointment at Faded Az, West End's best barber. Appointment-only." />
       </Helmet>
 
-      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden py-32">
         {/* Background images — desktop / mobile */}
         <div
           className="absolute inset-0 bg-cover bg-center hidden sm:block"
@@ -35,7 +56,7 @@ export default function BookPage() {
         />
         <div className="absolute inset-0 bg-gray-950/75" aria-hidden="true" />
 
-        <div className="relative z-10 text-center text-white px-6 max-w-xl mx-auto">
+        <div className="relative z-10 text-center text-white px-6 max-w-2xl mx-auto w-full">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,8 +80,9 @@ export default function BookPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
+            className="w-full bg-white rounded-2xl shadow-2xl p-4 sm:p-6 min-h-[420px] text-left"
           >
-            <BookingButton />
+            <div ref={widgetContainerRef} />
           </motion.div>
         </div>
       </section>

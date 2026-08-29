@@ -62,12 +62,14 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <Link
-              to="/book"
+            <a
+              href="https://book.squareup.com/appointments/789qnu6rh88qs5/location/MVD47PERRN5WR"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-mono text-sm font-light tracking-normal bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition-colors duration-200"
             >
               Book Now
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -116,12 +118,14 @@ const Navbar = () => {
                 {label}
               </Link>
             ))}
-            <Link
-              to="/book"
+            <a
+              href="https://book.squareup.com/appointments/789qnu6rh88qs5/location/MVD47PERRN5WR"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-mono text-base font-light bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded text-center transition-colors duration-200 mt-2"
             >
               Book Now
-            </Link>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>
