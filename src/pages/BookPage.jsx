@@ -73,7 +73,7 @@ export default function BookPage() {
             className="text-lg text-gray-200 mb-8"
           >
             Faded Az is appointment-only — slots fill fast. We&apos;re open
-            Wednesday to Friday, 8 am – 8 pm at 314 Montague Rd, West End.
+            Wednesday to Friday, 8 am – 1 pm and 4 pm – 9 pm at 314 Montague Rd, West End.
           </motion.p>
 
           <motion.div
